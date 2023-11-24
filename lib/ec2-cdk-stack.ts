@@ -125,7 +125,7 @@ export class PythonEc2BlogpostStack extends cdk.Stack {
     const githubSourceAction = new GitHubSourceAction({
       actionName: 'GithubSource',
       oauthToken: SecretValue.secretsManager('github-oauth-token'), // SET UP BEFORE
-      owner: 'darko-mesaros', // THIS NEEDS TO BE CHANGED TO THE READER
+      owner: 'Nadhirovich', // THIS NEEDS TO BE CHANGED TO THE READER
       repo: 'sample-python-web-app',
       branch: 'main',
       output: sourceOutput,
